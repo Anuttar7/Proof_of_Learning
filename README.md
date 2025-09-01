@@ -1,9 +1,12 @@
 # Proof-of-Learning
 
-This repository is an implementation of the paper [Proof-of-Learning: Definitions and Practice](https://arxiv.org/abs/2103.05633), published in 42nd IEEE Symposium on
-Security and Privacy. In this paper, we introduce the concept of proof-of-learning in ML. Inspired by research on both proof-of-work and verified computing, we observe how a seminal training algorithm, gradient descent, accumulates secret information due to its stochasticity. This produces a natural construction for a proof-of-learning which demonstrates that a party has expended the compute require to obtain a set of model parameters correctly. For more details, please read the paper.
+This repository is baseed on an implementation of the paper [Proof-of-Learning: Definitions and Practice](https://arxiv.org/abs/2103.05633), published in 42nd IEEE Symposium on
+Security and Privacy. This paper, introduces the concept of proof-of-learning in ML. Inspired by research on both proof-of-work and verified computing, the paper observes how a seminal training algorithm, gradient descent, accumulates secret information due to its stochasticity. This produces a natural construction for a proof-of-learning which demonstrates that a party has expended the compute require to obtain a set of model parameters correctly. For more details, please read the paper.
 
-We test our code on two datasets: CIFAR-10, and CIFAR-100. 
+We test our code on two datasets: MNIST, and MedMNIST. 
+We also analyse various PoL attack scenarios and experiment with possible defences.
+
+Link to the original repository is here [Original repository by authors](https://github.com/cleverhans-lab/Proof-of-Learning.git)
 
 ### Dependency
 Our code is implemented and tested on PyTorch. Following packages are used:
@@ -33,11 +36,8 @@ Setting q to 0 or smaller will verify the whole proof, otherwise the top-q itera
 
 Please make sure `lr`, `batch-sizr`, `epochs`, `dataset`, `model`, and `save-freq` are consistent with what used in `train.py`.
 
-### Questions or suggestions
-If you have any questions or suggestions, feel free to raise an issue or send me an email at nickhengrui.jia@mail.utoronto.ca
-
-### Citing this work
-If you use this repository for academic research, you are highly encouraged (though not required) to cite our paper:
+### Credits to original authors
+This project has been derived from the paper:
 ```
 @inproceedings{jia2021proofoflearning,
       title={Proof-of-Learning: Definitions and Practice}, 
