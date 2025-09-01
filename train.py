@@ -33,8 +33,9 @@ def train(lr, batch_size, epochs, dataset, architecture, exp_id=None, sequence=N
     num_batch = trainset.__len__() / batch_size
     net.to(device)
     if dataset == 'MNIST':
-        optimizer = optim.SGD(net.parameters(), lr=lr)
+        # optimizer = optim.SGD(net.parameters(), lr=lr)
         scheduler = None
+        optimizer = optim.Adam(net.parameters(), lr=lr)
     elif dataset == 'CIFAR10':
         if dec_lr is None:
             dec_lr = [100, 150]
