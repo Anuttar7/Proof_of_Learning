@@ -1,3 +1,5 @@
+### For code please switch to the code branch. The main branch contains presentations and reports
+
 # Proof-of-Learning
 
 This repository is baseed on an implementation of the paper [Proof-of-Learning: Definitions and Practice](https://arxiv.org/abs/2103.05633), published in 42nd IEEE Symposium on
